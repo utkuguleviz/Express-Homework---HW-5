@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>INVENTORS</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>INVENTORS</h1>
+    <table>
+        <tr>
+            <th>FIRST</th>
+            <th>LAST</th>
+            <th>YEAR</th>
+        </tr>
+        <% for(var i = 0; i < inventors.length; i++) {%>
+            <tr>
+                <td><%= inventors[i].first%></td>
+                <td><%= inventors[i].last%></td>
+                <td><%= inventors[i].year%></td>
+            </tr>
+    <% } %>
+    </table>
+  </body>
+</html>
